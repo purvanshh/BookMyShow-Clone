@@ -16,7 +16,7 @@ const Bookings = () => {
             const response = await getAllBookings();
             if(response.success){
                 setBookings(response.data);
-                 console.log(response.data);
+                console.log(response.data);
             }else{
                 message.error(response.message);
             }

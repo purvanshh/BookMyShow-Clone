@@ -5,9 +5,6 @@ import {useNavigate} from 'react-router-dom';
 
 const Profile = () => {
   const navigate = useNavigate();
-    // const onChange = (key) => {
-    //     console.log(key);
-    //   };
     const checkUser = async () => {
       const user = await axios.get("/api/users/get-current-user", {
           headers: {
