@@ -39,7 +39,7 @@ function Login() {
         message.error(response.message);
       }
     } catch (error) {
-      message.error(error.message);
+      message.error(error.message + " Please try again");
     }
   };
 
